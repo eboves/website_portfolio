@@ -29,10 +29,20 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 
-.container {
+#root {
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 0.25fr 5fr;
-  grid-template-rows: 0.75fr 5fr 0.5fr;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+.container {
+  background-color: red;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  grid-template-columns: 0.5fr 5fr;
+  grid-template-rows: 0.5fr 5fr 0.5fr; */
 }
 .header {
   grid-area: 1/1/2/3;
