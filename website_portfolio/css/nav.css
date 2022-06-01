@@ -1,0 +1,74 @@
+/***************************************/
+/*               Nav              */
+/***************************************/
+
+.nav {
+  height: 100%;
+  justify-content: space-between;
+}
+.nav_ul {
+  margin-right: 6.4rem;
+  gap: 3.2rem;
+  list-style-type: none;
+  font-size: 1.4rem;
+}
+
+/***************************************/
+/*                  Logo               */
+/***************************************/
+.logo {
+  height: 4.4rem;
+  width: 4.4rem;
+  margin-left: 6.4rem;
+  background-color: black;
+}
+
+/***************************************/
+/*               Nav links             */
+/***************************************/
+.nav_ul {
+  counter-reset: section;
+}
+.nav_links::before {
+  counter-increment: section;
+  content: "0" counter(section) ".";
+  color: black;
+  padding-right: 0.4rem;
+}
+
+.nav_links,
+.resume {
+  text-decoration: none;
+}
+
+.nav_links:link,
+.nav_links:visited {
+  color: crimson;
+}
+
+.nav_links:hover,
+.nav_links:active {
+  color: black;
+}
+
+/***************************************/
+/*                Resume               */
+/***************************************/
+
+.resume {
+  border: 1px solid purple;
+  padding: 0.6rem 0.8rem;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.resume:link,
+.resume:visited {
+  color: crimson;
+}
+
+.resume:hover,
+.resume:active {
+  color: crimson;
+  background-color: rgba(220, 20, 60, 0.274);
+}

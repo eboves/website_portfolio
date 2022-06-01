@@ -1,5 +1,6 @@
 @import url(about_me.css);
 @import url(footer.css);
+@import url(nav.css);
 
 * {
   padding: 0;
@@ -19,11 +20,20 @@ body {
   background-color: #f5f5f5;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.ibm {
+  font-family: "IBM Plex Mono", monospace;
+}
+
 .container {
   background-color: red;
   display: grid;
-  grid-template-columns: 0.5fr 5fr;
-  grid-template-rows: 0.5fr 5fr 0.5fr;
+  grid-template-columns: 0.25fr 5fr;
+  grid-template-rows: 0.75fr 5fr 0.5fr;
 }
 .header {
   grid-area: 1/1/2/3;
