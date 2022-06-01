@@ -30,14 +30,12 @@ body {
 }
 
 .container {
-  background-color: red;
   display: grid;
   grid-template-columns: 0.25fr 5fr;
   grid-template-rows: 0.75fr 5fr 0.5fr;
 }
 .header {
   grid-area: 1/1/2/3;
-  background-color: aqua;
 }
 .main {
   grid-area: 2/2/3/3;
