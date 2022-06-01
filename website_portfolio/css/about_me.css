@@ -2,64 +2,20 @@
 /*        ABOUT ME        */
 /**************************/
 
-.about-me{
+.about-me {
   max-width: 120rem;
 }
-.name{
+.name {
   font-size: 8.6rem;
   font-weight: 600;
   letter-spacing: -3.2px;
   margin-bottom: 1.6rem;
-
-
 }
 
-.stuff{
+.stuff {
   font-size: 6.2rem;
   color: #bababa;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* .about-me {
   height: 100vh;
@@ -111,5 +67,6 @@ h1 {
 
 .btn-a:hover,
 .btn-a:active {
-  background-color: rgba(100, 16, 255, 0.15); */
-}
+  background-color: rgba(100, 16, 255, 0.15); 
+  }
+  */
