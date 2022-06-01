@@ -1,0 +1,15 @@
+/**************************/
+/*         FOOTER         */
+/**************************/
+.footer {
+  justify-self: center;
+  align-self: center;
+  color: #8a8a8a;
+  margin-bottom: 2rem;
+}
+
+.copy-right {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "IBM Plex Mono", monospace;
+}

@@ -1,0 +1,57 @@
+@import url(about_me.css);
+@import url(footer.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #131313;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 0.5fr 5fr;
+  grid-template-rows: 0.5fr 5fr 0.5fr;
+}
+.header {
+  grid-area: 1/1/2/3;
+  background-color: aqua;
+}
+.main {
+  grid-area: 2/2/3/3;
+  background-color: blue;
+}
+.socials {
+  grid-area: 2/1/3/2;
+  background-color: #131313;
+}
+.footer {
+  grid-area: 3/1/4/3;
+  background-color: blueviolet;
+}
+
+.about-me {
+  background-color: palegreen;
+}
+
+.skills {
+  background-color: bisque;
+}
+.projects {
+  background-color: peru;
+}
+.contact-me {
+  background-color: pink;
+}
