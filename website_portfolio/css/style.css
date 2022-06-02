@@ -1,6 +1,7 @@
 @import url(about_me.css);
 @import url(footer.css);
 @import url(nav.css);
+@import url(socialmedia.css);
 
 * {
   padding: 0;
@@ -42,20 +43,22 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 
+.atag {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .main {
   margin-top: 9.8rem;
-  padding: 0 100px;
-  background-color: blue;
+  padding: 0 115px;
 }
 .socials {
-  background-color: #131313;
-}
-.footer {
-  background-color: blueviolet;
 }
 
 .about-me {
-  background-color: palegreen;
+}
+.footer {
+  background-color: blueviolet;
 }
 
 .skills {

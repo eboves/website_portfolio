@@ -7,7 +7,8 @@
   justify-content: space-between;
   align-items: center;
 }
-.nav_ul {
+.nav-ul {
+  counter-reset: section;
   margin-right: 6.4rem;
   gap: 3.2rem;
   list-style-type: none;
@@ -27,28 +28,21 @@
 /***************************************/
 /*               Nav links             */
 /***************************************/
-.nav_ul {
-  counter-reset: section;
-}
-.nav_links::before {
+
+.nav-links::before {
   counter-increment: section;
   content: "0" counter(section) ".";
   color: black;
   padding-right: 0.4rem;
 }
 
-.nav_links,
-.resume {
-  text-decoration: none;
-}
-
-.nav_links:link,
-.nav_links:visited {
+.nav-links:link,
+.nav-links:visited {
   color: crimson;
 }
 
-.nav_links:hover,
-.nav_links:active {
+.nav-links:hover,
+.nav-links:active {
   color: black;
 }
 

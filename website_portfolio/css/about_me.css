@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.num_header {
+.num-header {
   font-size: 2.4rem;
   counter-set: section;
   margin-bottom: 2.4rem;
