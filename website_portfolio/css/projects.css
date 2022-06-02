@@ -1,0 +1,107 @@
+/**************************/
+/*         PROJECTS       */
+/**************************/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.projects {
+  flex-direction: column;
+  margin-bottom: 8.8rem;
+}
+
+.projects-list {
+  margin-bottom: 8.8rem;
+}
+
+.img-over-lay {
+  grid-area: 1/1/2/7;
+  position: relative;
+  display: flex;
+}
+
+.project-img {
+  grid-area: 1/1/2/7;
+}
+
+img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+}
+
+.over-lay {
+  background-color: rgba(220, 20, 60, 0.384);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 9px;
+  opacity: 0.5;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.img-over-lay:hover .over-lay {
+  opacity: 0;
+}
+
+.project-content {
+  grid-area: 1/6/2/13;
+  margin-top: 4.8rem;
+}
+
+.project {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-weight: 400;
+  color: crimson;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.1rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.project-description {
+  width: 55ch;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  padding: 2rem 1rem 2rem 4rem;
+  font-size: 1.6rem;
+  z-index: 9999;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.project-tools {
+  flex-direction: column;
+  font-size: 1.4rem;
+  margin-bottom: 1.8rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+}
+
+.project-tools-used {
+  color: crimson;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  gap: 1rem;
+}
+
+.project-links {
+  display: flex;
+  font-size: 2rem;
+  gap: 2.4rem;
+}

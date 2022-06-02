@@ -3,6 +3,7 @@
 @import url(nav.css);
 @import url(socialmedia.css);
 @import url(skills.css);
+@import url(projects.css);
 
 * {
   padding: 0;
@@ -75,9 +76,14 @@ h2::after {
   background-color: crimson;
 }
 
+.header {
+  margin-bottom: 12.8rem;
+}
 .main {
-  margin-top: 9.8rem;
-  padding: 0 115px;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 100rem;
+  min-height: 100vh;
 }
 .socials {
 }
@@ -90,10 +96,10 @@ h2::after {
 }
 
 .skills {
-  margin-top: 9.6rem;
+  margin-top: 12.8rem;
 }
 .projects {
-  background-color: peru;
+  margin-top: 12.8rem;
 }
 .contact-me {
   background-color: pink;
