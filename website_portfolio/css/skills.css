@@ -1,6 +1,5 @@
 .skills {
   flex-direction: column;
-  margin-bottom: 12.8rem;
 }
 .ul-skills {
   display: grid;
@@ -29,9 +28,6 @@
   opacity: 1;
 }
 
-.skills-logos {
-  margin-bottom: 6.4rem;
-}
 .skills-name {
   opacity: 0;
   margin-top: 1.2rem;

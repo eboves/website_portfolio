@@ -22,7 +22,8 @@
   height: 4.4rem;
   width: 4.4rem;
   margin-left: 6.4rem;
-  background-color: black;
+  background-color: crimson;
+  border-radius: 50%;
 }
 
 /***************************************/

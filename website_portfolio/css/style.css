@@ -98,26 +98,29 @@ h2::after {
 
 .header {
   margin-top: 2.4rem;
+  /* order: 1; */
+}
+.socials {
+  order: 1;
 }
 .main {
   margin: 0px auto;
-  width: 100%;
   max-width: 100rem;
   min-height: 100vh;
 }
-/* .about-me {
-  margin-top: 4.4rem;
-} */
+.about-me {
+  order: 2;
+}
 
-/* .skills {
-
-} */
-/* .projects {
-
-} */
-/* .contact-me {
-
-} */
-/* .footer {
-
-} */
+.skills {
+  order: 3;
+}
+.projects {
+  order: 4;
+}
+.contact-me {
+  order: 5;
+}
+.footer {
+  order: 6;
+}
