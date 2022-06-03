@@ -1,10 +1,17 @@
+/***************************************/
+/*                Imports              */
+/***************************************/
 @import url(about_me.css);
 @import url(footer.css);
 @import url(nav.css);
 @import url(socialmedia.css);
 @import url(skills.css);
 @import url(projects.css);
+@import url(contact_me.css);
 
+/***************************************/
+/*                ROOT              */
+/***************************************/
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +30,9 @@ body {
   background-color: #f5f5f5;
 }
 
+/***************************************/
+/*             Main containers         */
+/***************************************/
 #root {
   min-height: 100vh;
   display: grid;
@@ -33,10 +43,11 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: 0.5fr 5fr;
-  grid-template-rows: 0.5fr 5fr 0.5fr; */
 }
+
+/***************************************/
+/*                GENERAL              */
+/***************************************/
 .flex {
   display: flex;
 }
@@ -50,6 +61,11 @@ body {
   list-style-type: none;
 }
 
+.magin128 {
+  margin-top: 16rem;
+}
+
+/*           Before & After            */
 .num-header {
   font-size: 2.4rem;
   counter-set: section;
@@ -76,8 +92,12 @@ h2::after {
   background-color: crimson;
 }
 
+/***************************************/
+/*         Section's Container         */
+/***************************************/
+
 .header {
-  margin-bottom: 12.8rem;
+  margin-top: 2.4rem;
 }
 .main {
   margin: 0px auto;
@@ -85,22 +105,19 @@ h2::after {
   max-width: 100rem;
   min-height: 100vh;
 }
-.socials {
-}
-
-.about-me {
+/* .about-me {
   margin-top: 4.4rem;
-}
-.footer {
-  background-color: blueviolet;
-}
+} */
 
-.skills {
-  margin-top: 12.8rem;
-}
-.projects {
-  margin-top: 12.8rem;
-}
-.contact-me {
-  background-color: pink;
-}
+/* .skills {
+
+} */
+/* .projects {
+
+} */
+/* .contact-me {
+
+} */
+/* .footer {
+
+} */
