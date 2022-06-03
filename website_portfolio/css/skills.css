@@ -15,8 +15,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-self: center;
   transition: all 0.3s ease;
-  justify-self: start;
 }
 
 .li-skills:hover {

@@ -128,6 +128,9 @@
 /*        BELOW 688 px       */
 /******************************/
 @media (max-width: 43em) {
+  .header {
+    display: none;
+  }
   /*        MAIN      */
   .main {
     display: flex;
@@ -141,7 +144,10 @@
   }
 
   /*  ----- SKILLS -----   */
-
+  .skills-logos {
+    display: flex;
+    flex-direction: column;
+  }
   .skills-name {
     opacity: 1;
     color: crimson;
@@ -209,5 +215,40 @@
 @media (max-width: 35em) {
   /*        MAIN      */
   .main {
+  }
+  .name {
+    font-size: 5.2rem;
+  }
+  .stuff {
+    font-size: 3rem;
+  }
+  .personal-desc {
+    width: 72ch;
+  }
+  .personal-description {
+    font-size: 1.4rem;
+  }
+
+  .project-description {
+    width: 33ch;
+  }
+
+  .skills {
+    align-self: center;
+  }
+  .ul-skills {
+    gap: 0rem;
+    font-size: 4.4rem;
+  }
+
+  .pro-description {
+    font-size: 1.4rem;
+  }
+  .form {
+    column-gap: 0;
+    grid-template-columns: 26rem 20rem;
+  }
+  .message-form {
+    min-width: 44rem;
   }
 }
