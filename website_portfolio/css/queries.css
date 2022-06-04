@@ -131,7 +131,7 @@
   .header {
     display: none;
   }
-  /*        MAIN      */
+  /*  ----- MAIN -----   */
   .main {
     display: flex;
     justify-content: center;
@@ -192,10 +192,12 @@
   .w2 {
     grid-area: 4/2/5/3;
   }
+
   /*  ----- PROJECTS -----   */
   .projects {
     align-self: center;
   }
+
   /*  ----- CONTACT ME -----   */
   .contact-me {
     align-self: center;
@@ -203,7 +205,6 @@
   .message-form {
     min-width: 49.6rem;
   }
-
   .form {
     grid-template-columns: 30rem 20rem;
   }
@@ -213,9 +214,7 @@
 /*        BELOW 560 px       */
 /******************************/
 @media (max-width: 35em) {
-  /*        MAIN      */
-  .main {
-  }
+  /*  ----- ABOUT ME -----   */
   .name {
     font-size: 5.2rem;
   }
@@ -229,10 +228,7 @@
     font-size: 1.4rem;
   }
 
-  .project-description {
-    width: 33ch;
-  }
-
+  /*  ----- SKILLS -----   */
   .skills {
     align-self: center;
   }
@@ -241,14 +237,79 @@
     font-size: 4.4rem;
   }
 
+  /*  ----- PROJECTS -----   */
+  .project-description {
+    width: 33ch;
+  }
   .pro-description {
     font-size: 1.4rem;
   }
+
+  /*  ----- CONTACT ME -----   */
   .form {
     column-gap: 0;
     grid-template-columns: 26rem 20rem;
   }
   .message-form {
     min-width: 44rem;
+  }
+}
+
+/*******************************/
+/*        BELOW 480 px       */
+/******************************/
+@media (max-width: 30em) {
+  h2::after {
+    width: 200px;
+  }
+
+  /*  ----- ABOUT ME -----   */
+  .name {
+    font-size: 4.4rem;
+  }
+  .stuff {
+    font-size: 2.4rem;
+  }
+  .personal-desc {
+    width: 45ch;
+  }
+  .personal-description {
+    font-size: 1.2rem;
+  }
+
+  /*  ----- PROJECTS -----   */
+  .project-info {
+    padding-left: 1.8rem;
+  }
+  .project-description {
+    width: 28ch;
+  }
+  /*  ----- CONTACT ME -----   */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .message-form {
+    min-width: 40rem;
+    padding: 1rem 0 0 0.75rem;
+  }
+}
+
+/*******************************/
+/*        BELOW 432 px       */
+/******************************/
+@media (max-width: 27em) {
+  h2::after {
+    width: 150px;
+  }
+  /*  ----- ABOUT ME -----   */
+  .stuff {
+    font-size: 2.2rem;
+  }
+
+  /*  ----- CONTACT ME -----   */
+  .message-form {
+    min-width: 32rem;
   }
 }
