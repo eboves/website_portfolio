@@ -2,6 +2,13 @@ const sections = document.querySelectorAll("section");
 const nav_ul = document.getElementById("nav-ul-id");
 const btn_nav_el = document.querySelector(".btn-nav");
 const header = document.querySelector(".header");
+const btn_resume = document.getElementById("btn-resume");
+const LINK_TO_RESUME =
+  "https://drive.google.com/file/d/1XxjLRL-bVNVYnbfmADa5OKG8Wza8nnAp/view?usp=sharing";
+
+btn_resume.addEventListener("click", function () {
+  window.open(LINK_TO_RESUME, "_blank");
+});
 
 function gen_nav_list() {
   sections.forEach((section) => {
