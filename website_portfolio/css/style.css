@@ -20,6 +20,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   font-weight: 400;
   color: #131313;
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
 /***************************************/
@@ -97,8 +99,12 @@ h2::after {
 /***************************************/
 
 .header {
-  margin-top: 2.4rem;
-  /* order: 1; */
+  justify-content: flex-end;
+  position: fixed;
+  background-color: #f5f5f5;
+  z-index: 9999;
+  width: 100%;
+  padding: 1.6rem 0;
 }
 .socials {
   order: 1;

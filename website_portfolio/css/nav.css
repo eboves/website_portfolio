@@ -46,7 +46,7 @@
 .nav-links:active {
   color: black;
 }
-.nav_resume {
+.nav-resume {
   justify-content: center;
   align-items: center;
   gap: 2.4rem;
@@ -58,8 +58,32 @@
 /***************************************/
 .resume {
   color: crimson;
+  width: fit-content;
+  font-size: 1.2rem;
+  padding: 1.25rem 1.75rem;
+  margin-left: 0.6rem;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .resume:hover {
   color: crimson;
   background-color: rgba(220, 20, 60, 0.274);
+}
+
+/***************************************/
+/*              Nav Button             */
+/***************************************/
+.btn-nav {
+  font-weight: 500;
+  font-size: 2.4rem;
+  /* margin-right: 2.4rem; */
+  cursor: pointer;
+  background: none;
+  border: none;
+  opacity: 0;
+}
+
+.phone-icon-nav[name="close-outline"] {
+  display: none;
 }

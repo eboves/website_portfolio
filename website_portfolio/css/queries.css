@@ -73,7 +73,7 @@
   .socials-icon {
     font-size: 2.4rem;
   }
-  .nav_resume {
+  .nav-resume {
     margin-right: 4.8rem;
   }
 }
@@ -84,13 +84,13 @@
 @media (max-width: 52em) {
   /*  ----- NAV -----   */
   .logo {
-    margin-left: 4.8rem;
+    margin-left: 4.4rem;
   }
   .nav-ul {
-    gap: 2.4rem;
+    gap: 2rem;
   }
-  .nav_resume {
-    margin-right: 3.2rem;
+  .nav-resume {
+    margin-right: 2.4rem;
   }
   /*  ----- ABOUT ME -----   */
   .name {
@@ -141,9 +141,67 @@
 /*        BELOW 688 px       */
 /******************************/
 @media (max-width: 43em) {
-  .header {
+  /*  ----- NAV -----   */
+  .btn-nav {
+    opacity: 1;
+    font-size: 3rem;
+    margin-right: 2.4rem;
+    z-index: 9999;
+  }
+
+  .resume {
+    font-size: 1.6rem;
+  }
+  .nav {
+    background-color: rgba(220, 20, 60, 0.774);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    visibility: hidden;
+    /* transition: all 0.2s ease-in; */
+  }
+
+  h2::after {
+    width: 0;
+  }
+  .nav-ul {
+    font-size: 2.4rem;
+    font-weight: 600;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-links:link,
+  .nav-links:visited {
+    color: #ffffff;
+  }
+
+  .nav-resume {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .phone-icon-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .phone-icon-nav[name="menu-outline"] {
     display: none;
   }
+
   /*  ----- MAIN -----   */
   .main {
     display: flex;
