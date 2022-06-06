@@ -24,13 +24,16 @@
             <header class="header">
                 <nav class="nav flex">
                     <div class="logo"></div>
-                    <ul class="nav-ul flex"> 
-                        <li><a href="#" class="nav-links atag ibm">About</a></li>
-                        <li><a href="#" class="nav-links atag ibm">Skills</a></li>
-                        <li><a href="#" class="nav-links atag ibm">Projects</a></li>
-                        <li><a href="#" class="nav-links atag ibm">Contact</a></li>
-                        <li><a href="#" class="resume atag">Resume</a></li>
-                    </ul>
+                    <div class="nav_resume flex">
+                        <ul id="nav-ul-id" class="nav-ul flex"> 
+                            <!-- <li><a href="#" class="nav-links atag ibm">About</a></li>
+                            <li><a href="#" class="nav-links atag ibm">Skills</a></li>
+                            <li><a href="#" class="nav-links atag ibm">Projects</a></li>
+                            <li><a href="#" class="nav-links atag ibm">Contact</a></li> -->
+                        </ul>
+                        <button class="btn-a resume">Resume</button>
+                    </div>
+                   
                 </nav>
             </header>
             <!-- header -->
@@ -46,7 +49,7 @@
             </div>
             <!-- socials -->
             <main class="main magin128">
-                <section class="about-me flex magin128">
+                <section id="aboutme" data-nav="About Me" class="about-me flex magin128">
                     <h2 class="num-header flex">About Me</h2>
                     <div class="personal-info">
                         <p class="iam ibm">Hi, my name is</p>
@@ -64,8 +67,7 @@
                     </section>
                     <!-- about-me -->
 
-                <section class="skills magin128">
-
+                <section id="skills" data-nav="Skills" class="skills magin128">
                     <div class="skills-logos">
                         <h2 class="num-header flex">Skills</h2>
                         <div class="skill-list-container">
@@ -81,11 +83,10 @@
                             </ul>
                         </div>
                     </div>
+                </section>
+                <!-- skills -->
 
-                    </section>
-                    <!-- skills -->
-
-                <section class="projects magin128">
+                <section id="projects" data-nav="Projects" class="projects magin128">
                     <h2 class="num-header flex">Projects</h2>
                     <ul class="projects-list">
                         <li class="left-side grid">
@@ -122,15 +123,12 @@
                                 <!-- project-info -->
                             </div>
                         </li>
-                       
                     </ul>
                     <!-- project-list -->
-
                 </section>
                 <!-- projects -->
 
-                <section id="contact-me" class="contact-me magin128 flex">
-
+                <section id="contactme" data-nav="Contact Me" class="contact-me magin128 flex">
                     <div class="contact-me-form padding-radius">
                         <h2 class="num-header flex">Projects</h2>
                         <form action="" method="get" class="form">
@@ -158,7 +156,6 @@
                         <!-- form -->
                     </div>
                     <!-- contact-me-form -->
-
                 </section>
                 <!-- contact-me -->
             </main>
@@ -171,5 +168,6 @@
         <!-- container -->
     </div>
     <!-- root -->
+    <script src="/website_portfolio/scripts/script.js"></script>
   </body>
 </html>
